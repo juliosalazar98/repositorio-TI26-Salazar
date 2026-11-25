@@ -1,0 +1,62 @@
+{
+  "modelo": "PCA",
+  "variables_originales": 41,
+  "componentes_80": 22,
+  "componentes_90": 27,
+  "componentes_kaiser": 21,
+  "componentes_elegidos": 22,
+  "varianza_conservada_%": 80.52,
+  "varianza_PC1_%": 12.81,
+  "varianza_PC2_%": 5.96,
+  "naive_bayes_con_pca": [
+    {
+      "configuración": "PCA 2 componentes",
+      "precision": 0.5707,
+      "recall": 0.2522,
+      "f1": 0.3498,
+      "roc_auc": 0.7571
+    },
+    {
+      "configuración": "PCA 5 componentes",
+      "precision": 0.5589,
+      "recall": 0.2403,
+      "f1": 0.3361,
+      "roc_auc": 0.7354
+    },
+    {
+      "configuración": "PCA 10 componentes",
+      "precision": 0.5037,
+      "recall": 0.2953,
+      "f1": 0.3723,
+      "roc_auc": 0.7452
+    },
+    {
+      "configuración": "PCA 21 componentes",
+      "precision": 0.3316,
+      "recall": 0.4138,
+      "f1": 0.3682,
+      "roc_auc": 0.7159
+    },
+    {
+      "configuración": "PCA 22 componentes",
+      "precision": 0.3372,
+      "recall": 0.4073,
+      "f1": 0.369,
+      "roc_auc": 0.7138
+    },
+    {
+      "configuración": "PCA 27 componentes",
+      "precision": 0.3211,
+      "recall": 0.4235,
+      "f1": 0.3652,
+      "roc_auc": 0.7034
+    },
+    {
+      "configuración": "Sin PCA (41 variables)",
+      "precision": 0.4278,
+      "recall": 0.4407,
+      "f1": 0.4342,
+      "roc_auc": 0.7777
+    }
+  ]
+}
