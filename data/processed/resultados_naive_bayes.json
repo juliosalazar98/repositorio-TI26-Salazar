@@ -1,0 +1,20 @@
+{
+  "modelo": "Gaussian Naive Bayes",
+  "var_smoothing": 1e-12,
+  "umbral_optimo": 0.34067522687924706,
+  "metricas_umbral_05": {
+    "accuracy": 0.8706,
+    "precision": 0.4278,
+    "recall": 0.4407,
+    "f1": 0.4342,
+    "roc_auc": 0.7777
+  },
+  "metricas_umbral_optimo": {
+    "accuracy": 0.8701,
+    "precision": 0.4268,
+    "recall": 0.4461,
+    "f1": 0.4362,
+    "roc_auc": 0.7777
+  },
+  "baseline_accuracy": 0.8873
+}
