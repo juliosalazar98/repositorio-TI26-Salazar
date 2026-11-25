@@ -1,0 +1,87 @@
+{
+  "modelo": "Monte Carlo first-visit (on-policy, ε-greedy)",
+  "parametros": {
+    "n_episodios": 100000,
+    "gamma": 0.9,
+    "eps_inicial": 1.0,
+    "eps_min": 0.05,
+    "eps_decay": 0.99995
+  },
+  "estados": 20,
+  "acciones": [
+    "fijo",
+    "celular",
+    "celular_promo",
+    "detener"
+  ],
+  "politica": {
+    "nuevo": [
+      "celular_promo",
+      "celular_promo",
+      "celular_promo",
+      "detener",
+      "detener"
+    ],
+    "fallo_previo": [
+      "celular_promo",
+      "celular_promo",
+      "fijo",
+      "fijo",
+      "celular_promo"
+    ],
+    "receptivo": [
+      "celular",
+      "celular",
+      "celular",
+      "celular_promo",
+      "celular_promo"
+    ],
+    "exito_previo": [
+      "fijo",
+      "fijo",
+      "fijo",
+      "celular_promo",
+      "celular"
+    ]
+  },
+  "recompensa_optima": 5.777,
+  "coincidencia_politica_optima_%": 70.0,
+  "comparacion_estrategias": [
+    {
+      "estrategia": "Agente Monte Carlo",
+      "recompensa_promedio": 5.491,
+      "conversion_%": 38.51,
+      "llamadas_por_cliente": 2.351
+    },
+    {
+      "estrategia": "Siempre celular + promoción",
+      "recompensa_promedio": 4.952,
+      "conversion_%": 45.78,
+      "llamadas_por_cliente": 2.843
+    },
+    {
+      "estrategia": "Una llamada al celular y detener",
+      "recompensa_promedio": 2.562,
+      "conversion_%": 13.97,
+      "llamadas_por_cliente": 1.0
+    },
+    {
+      "estrategia": "Siempre celular (hasta 5 llamadas)",
+      "recompensa_promedio": 2.077,
+      "conversion_%": 33.555,
+      "llamadas_por_cliente": 3.082
+    },
+    {
+      "estrategia": "Aleatoria",
+      "recompensa_promedio": 1.824,
+      "conversion_%": 18.76,
+      "llamadas_por_cliente": 1.663
+    },
+    {
+      "estrategia": "Siempre fijo (hasta 5 llamadas)",
+      "recompensa_promedio": -0.418,
+      "conversion_%": 18.37,
+      "llamadas_por_cliente": 3.386
+    }
+  ]
+}
